@@ -1,0 +1,14 @@
+﻿'RobsGame_BlackJack.exe' (Win32): Loaded 'D:\repo_RobsGame\Rob_Assinment_Game\RobsGame_BlackJack\x64\Debug\RobsGame_BlackJack.exe'. Symbols loaded.
+'RobsGame_BlackJack.exe' (Win32): Loaded 'C:\Windows\System32\ntdll.dll'. 
+'RobsGame_BlackJack.exe' (Win32): Loaded 'C:\Windows\System32\kernel32.dll'. 
+'RobsGame_BlackJack.exe' (Win32): Loaded 'C:\Windows\System32\KernelBase.dll'. 
+'RobsGame_BlackJack.exe' (Win32): Loaded 'C:\Windows\System32\msvcp140d.dll'. 
+'RobsGame_BlackJack.exe' (Win32): Loaded 'C:\Windows\System32\vcruntime140d.dll'. 
+'RobsGame_BlackJack.exe' (Win32): Loaded 'C:\Windows\System32\vcruntime140_1d.dll'. 
+'RobsGame_BlackJack.exe' (Win32): Loaded 'C:\Windows\System32\ucrtbased.dll'. 
+The thread 0x62a0 has exited with code 0 (0x0).
+'RobsGame_BlackJack.exe' (Win32): Loaded 'C:\Windows\System32\kernel.appcore.dll'. 
+'RobsGame_BlackJack.exe' (Win32): Loaded 'C:\Windows\System32\msvcrt.dll'. 
+The thread 0x93e8 has exited with code 0 (0x0).
+The thread 0x7884 has exited with code 0 (0x0).
+The program '[32360] RobsGame_BlackJack.exe' has exited with code 0 (0x0).

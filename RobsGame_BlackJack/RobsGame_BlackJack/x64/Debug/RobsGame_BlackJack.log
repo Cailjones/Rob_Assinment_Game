@@ -1,2 +1,2 @@
 ﻿  RobsGame_BlackJack.cpp
-D:\repo_RobsGame\Rob_Assinment_Game\RobsGame_BlackJack\RobsGame_BlackJack\RobsGame_BlackJack.cpp(64): error C4700: uninitialized local variable 'Playertotal' used
+  RobsGame_BlackJack.vcxproj -> D:\repo_RobsGame\Rob_Assinment_Game\RobsGame_BlackJack\x64\Debug\RobsGame_BlackJack.exe
