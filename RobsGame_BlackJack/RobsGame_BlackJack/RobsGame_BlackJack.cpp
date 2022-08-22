@@ -16,12 +16,15 @@ void Rules()
 }
 int main()
 {
+    
     //values of cards
     int rngNumb1, rngNumb2, Playertotal = 0, rngNumb3, dealersNumber , rngNumbdealer1, rngNumbdealer2;
 
-    //gives random numb ranging between 1-12 for representing ace to king;
-    rngNumb1 = rand() % 12;
-    rngNumb2 = rand() % 12;
+    //gives random numb ranging between 1-11 for representing ace to king;
+    srand(time(0));
+    rngNumb1 = (1 + rand() % 10);
+    rngNumb3 = (1 + rand() % 10);
+    rngNumb2 = (1 + rand() % 10);
 
     rngNumbdealer1 = 11;
     rngNumbdealer2 = rand() % 11;
@@ -66,37 +69,35 @@ int main()
         if (Playertotal > 21)
         {
             cout << "You are bust you have lost against the dealer!!\n";
-            cout << "His total was :" << dealersNumber;
+            cout << "His total was :" << dealersNumber << "\n";
             break;
         }
         //2.
         else if (Playertotal == 21)
         {
 
-            cout << "congatulations you have a total of 21 the best score you won against the dealer!!";
+            cout << "congatulations you have a total of 21 the best score you won against the dealer!!\n";
             break;
         }
         //3.
         else 
         {
-            cout << "do you want anotehr card? (y/n)";
+            cout << "do you want anotehr card? (y/n)\n";
             cin >> StickOrTwist;
 
-            rngNumb3 = (1 + rand() % 10);
-            cout << "Number: " << rngNumb3 << endl << endl;
-            cout << "Your total now is: " << Playertotal + rngNumb3 << endl << endl;
-            Playertotal = Playertotal + rngNumb3;
-
-            
-
+            if (StickOrTwist == "y")
+            {
+                Playertotal = Playertotal + rngNumb3;
+                cout << "your total is now : " << Playertotal << "\n";
+            }
         }
 
     }
-    // a while loop for the input from the qustion y/Y being yes
     while (StickOrTwist == "y");
+    // a while loop for the input from the qustion y/Y being yes
+  
    
 
     return 0;
 }
 
-1
