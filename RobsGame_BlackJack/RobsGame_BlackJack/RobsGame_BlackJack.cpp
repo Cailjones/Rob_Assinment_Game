@@ -22,11 +22,12 @@ int main()
 
     //gives random numb ranging between 1-11 for representing ace to king;
     srand(time(0));
+
     rngNumb1 = (1 + rand() % 10);
     rngNumb3 = (1 + rand() % 10);
     rngNumb2 = (1 + rand() % 10);
 
-    rngNumbdealer1 = 11;
+    rngNumbdealer1 = 10;
     rngNumbdealer2 = rand() % 11;
 
     dealersNumber = rngNumbdealer2 + rngNumbdealer1;
@@ -94,9 +95,29 @@ int main()
 
     }
     while (StickOrTwist == "y");
-    // a while loop for the input from the qustion y/Y being yes
-  
-   
+    // a while loop for the input from the qustion y/Y being yes loop continues as long as y is inputed
+
+    //nested if statment when input of n is form the do loop
+    if (StickOrTwist == "n")
+    {
+        //gives the 2 total dealers and player
+        cout << "your Total was :\n " << Playertotal;
+        cout << "The dealers totasl was :\n " << dealersNumber;
+
+        // if the players total id grater than the dealers then the player wins
+        if (Playertotal >= dealersNumber)
+        {
+            cout << "You win against the dealer congatulatuions!!\n";
+        }
+
+        //otherwise the player loses
+        else
+        {
+            cout << "you have lost against the dealer unlucky maybe next time.\n";
+            
+        }
+ 
+    }
 
     return 0;
 }
