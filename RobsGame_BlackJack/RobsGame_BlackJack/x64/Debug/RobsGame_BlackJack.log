@@ -1,4 +1,5 @@
 ﻿  RobsGame_BlackJack.cpp
 D:\repo_RobsGame\Rob_Assinment_Game\RobsGame_BlackJack\RobsGame_BlackJack\RobsGame_BlackJack.cpp(32,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-D:\repo_RobsGame\Rob_Assinment_Game\RobsGame_BlackJack\RobsGame_BlackJack\RobsGame_BlackJack.cpp(44,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\repo_RobsGame\Rob_Assinment_Game\RobsGame_BlackJack\RobsGame_BlackJack\RobsGame_BlackJack.cpp(40,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\repo_RobsGame\Rob_Assinment_Game\RobsGame_BlackJack\RobsGame_BlackJack\RobsGame_BlackJack.cpp(52,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   RobsGame_BlackJack.vcxproj -> D:\repo_RobsGame\Rob_Assinment_Game\RobsGame_BlackJack\x64\Debug\RobsGame_BlackJack.exe

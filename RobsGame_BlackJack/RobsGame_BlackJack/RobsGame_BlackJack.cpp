@@ -33,12 +33,20 @@ int randonNumb()
     a = (1 + rand() % 10);
     return a;
 }
+int randonNumb2()
+{
+    // creates a rng number every time
+    int a;
+    srand(time(0));
+    a = (2 + rand() % 9);
+    return a;
+}
 int main()
 {
     //players name
     string NameOfPlayer, goAgain, goAgain1, StickOrTwist;
     //values of cards
-    int  Playertotal = 0, dealersNumber, rngNumbdealer1;
+    int  Playertotal = 0, dealersNumber, rngNumbdealer1, randnumb1, randnumb2;
 
     // needed for the random numbs
     srand(time(0));
@@ -65,11 +73,14 @@ int main()
 
     // allows the player to play again
     do{
-
+        
         //Calculationg player start numbers
-        Playertotal = randonNumb() + randonNumb();
+        randnumb1 = randonNumb();
+        randnumb2 = randonNumb2();
+
+        Playertotal = randnumb1 + randnumb2;
         cout << "Here your first 2 numbers\n";
-        cout << randonNumb() << ", " << randonNumb() << " This is your numbers.";
+        cout << randnumb1 << ", " << randnumb2 << " This is your numbers.";
         cout << "Your total is : " << Playertotal << "\n";
 
         //do loop containg if statments so if the player was to go over a spasific value then it will do as follows
@@ -130,7 +141,7 @@ int main()
 
         }
         // Would you like to play again qustion linking to teh do while loop
-        cout << "would you like to go again ? y/n";
+        cout << "Would you like to go again ? y/n";
         cin >> goAgain1;
         cout << "\n\n";
     } 
