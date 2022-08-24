@@ -3,6 +3,7 @@
 
 #include <iostream>
 using namespace std;
+//text
 void title()
 {
     //dysplays apone opening
@@ -11,6 +12,7 @@ void title()
     cout << " =============================== \n";
 
 }
+//text
 void Rules()
 {
     cout << "=========================== \n";
@@ -22,24 +24,25 @@ void Rules()
     cout << "or you can twist and get a new number wich will add to your value.\n";
     cout << "lets get started\n\n";
 }
+//function to generate a randome number everytime
+int randonNumb()
+{
+    // creates a rng number every time
+    int a;
+    srand(time(0));
+    a = (1 + rand() % 10);
+    return a;
+}
 int main()
 {
-
-   
     //values of cards
-    int rngNumb1, rngNumb2, Playertotal = 0, rngNumb3, dealersNumber, rngNumbdealer1, rngNumbdealer2;
-
-    //gives random numb ranging between 1-11;
+    int  Playertotal = 0, dealersNumber, rngNumbdealer1;
     srand(time(0));
 
-    rngNumb1 = (1 + rand() % 10);
-    rngNumb3 = (1 + rand() % 10);
-    rngNumb2 = (1 + rand() % 10);
-
     rngNumbdealer1 = 10;
-    rngNumbdealer2 = rand() % 11;
+    randonNumb();
 
-    dealersNumber = rngNumbdealer2 + rngNumbdealer1;
+    dealersNumber = randonNumb() + rngNumbdealer1;
     //players name
     string NameOfPlayer, goAgain, goAgain1, StickOrTwist;
    
@@ -53,6 +56,7 @@ int main()
 
     //function contaning the rules
     Rules();
+
     // allows the player to play again
     do{
 
@@ -61,10 +65,10 @@ int main()
         cout << "\n";
 
         //Calculationg player start numbers
-        Playertotal = rngNumb1 + rngNumb2;
+        Playertotal = randonNumb() + randonNumb();
         cout << "Here your first 2 numbers\n";
-        cout << rngNumb1 << ", " << rngNumb2 << " This is your numbers.";
-        cout << "Your total is" << Playertotal << "\n";
+        cout << randonNumb() << ", " << randonNumb() << " This is your numbers.";
+        cout << "Your total is : " << Playertotal << "\n";
 
         //do loop containg if statments so if the player was to go over a spasific value then it will do as follows
         // 1. over 21 will make the player bust and lose and show delers value
@@ -72,21 +76,21 @@ int main()
         // 3. can requset or deney another card
         do
         {
-
+            //1.
             if (Playertotal > 21)
             {
                 cout << "You are bust you have lost against the dealer!!\n";
                 cout << "His total was : " << dealersNumber << "\n";
                 break;
             }
-
+            //2.
             else if (Playertotal == 21)
             {
 
                 cout << "Congatulations you have a total of 21 the best score you won against the dealer!!\n";
                 break;
             }
-
+            //3.
             else
             {
                 cout << "Do you want anotehr card? (y/n)\n";
@@ -94,7 +98,7 @@ int main()
 
                 if (StickOrTwist == "y")
                 {
-                    Playertotal = Playertotal + rngNumb3;
+                    Playertotal = Playertotal + randonNumb();
                     cout << "Your total is now : " << Playertotal << "\n";
                 }
             }
@@ -106,8 +110,8 @@ int main()
         if (StickOrTwist == "n")
         {
             //gives the 2 total dealers and player
-            cout << "Your Total was :\n " << Playertotal;
-            cout << "The dealers totasl was :\n " << dealersNumber;
+            cout << "Your Total was : " << Playertotal << "\n";
+            cout << "The dealers totasl was : " << dealersNumber << "\n";
 
             // if the players total id grater than the dealers then the player wins
             if (Playertotal >= dealersNumber)
