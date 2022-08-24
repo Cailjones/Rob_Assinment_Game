@@ -57,12 +57,13 @@ int main()
     //function contaning the rules
     Rules();
 
+    //dysplays name of player
+    cout << "Welcome " << NameOfPlayer << " lets begine.\n";
+    cout << "\n";
+
+
     // allows the player to play again
     do{
-
-        //dysplays name of player
-        cout << "Welcome " << NameOfPlayer << " lets begine.\n";
-        cout << "\n";
 
         //Calculationg player start numbers
         Playertotal = randonNumb() + randonNumb();
@@ -127,10 +128,10 @@ int main()
             }
 
         }
-        
+        // Would you like to play again qustion linking to teh do while loop
         cout << "would you like to go again ? y/n";
         cin >> goAgain1;
-        cout << "\n\n\n\n";
+        cout << "\n\n";
     } 
     while (goAgain1 == "y");
     
