@@ -35,16 +35,17 @@ int randonNumb()
 }
 int main()
 {
+    //players name
+    string NameOfPlayer, goAgain, goAgain1, StickOrTwist;
     //values of cards
     int  Playertotal = 0, dealersNumber, rngNumbdealer1;
-    srand(time(0));
 
+    // needed for the random numbs
+    srand(time(0));
     rngNumbdealer1 = 10;
     randonNumb();
 
     dealersNumber = randonNumb() + rngNumbdealer1;
-    //players name
-    string NameOfPlayer, goAgain, goAgain1, StickOrTwist;
    
     //function contaning the title
     title();
